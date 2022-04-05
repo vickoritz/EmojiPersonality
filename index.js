@@ -35,17 +35,13 @@ unshiftBtn.addEventListener("click", function(){
 })
 
 popBtn.addEventListener("click", function(){
-    if (emojiInput.value) {
-        myEmojis.pop(emojiInput.value)
-        emojiInput.value = ""
+        myEmojis.pop()
         renderEmojis()
     }
 })
 
 shiftBtn.addEventListener("click", function(){
-    if (emojiInput.value) {
-        myEmojis.shift(emojiInput.value)
-        emojiInput.value = ""
+        myEmojis.shift()
         renderEmojis()
     }
 })
